@@ -12,6 +12,7 @@
 		0F5BA77A28EF3F2000E4FAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5BA77928EF3F2000E4FAA3 /* Assets.xcassets */; };
 		0F5BA77D28EF3F2000E4FAA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5BA77C28EF3F2000E4FAA3 /* Preview Assets.xcassets */; };
 		0F5BA78428EF408100E4FAA3 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5BA78328EF408100E4FAA3 /* SecondView.swift */; };
+		0F5BA78628EF41AB00E4FAA3 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5BA78528EF41AB00E4FAA3 /* ThirdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0F5BA77928EF3F2000E4FAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5BA77C28EF3F2000E4FAA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F5BA78328EF408100E4FAA3 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		0F5BA78528EF41AB00E4FAA3 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				0F5BA77528EF3F1E00E4FAA3 /* demo1App.swift */,
 				0F5BA77728EF3F1E00E4FAA3 /* ContentView.swift */,
 				0F5BA78328EF408100E4FAA3 /* SecondView.swift */,
+				0F5BA78528EF41AB00E4FAA3 /* ThirdView.swift */,
 				0F5BA77928EF3F2000E4FAA3 /* Assets.xcassets */,
 				0F5BA77B28EF3F2000E4FAA3 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5BA78628EF41AB00E4FAA3 /* ThirdView.swift in Sources */,
 				0F5BA78428EF408100E4FAA3 /* SecondView.swift in Sources */,
 				0F5BA77828EF3F1E00E4FAA3 /* ContentView.swift in Sources */,
 				0F5BA77628EF3F1E00E4FAA3 /* demo1App.swift in Sources */,
