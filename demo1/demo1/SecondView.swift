@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct SecondView: View {
+  
+  @Binding var searchedText: String
+  
     var body: some View {
       NavigationView {
           VStack {
             Text("Step 2")
               .font(.title)
-            NavigationLink(destination: ThirdView()) {
+            
+            Text(self.searchedText)
+            
+            NavigationLink(destination: ThirdView(searchedText: $searchedText)) {
               Text("Go To Third Step")
             }
           }
@@ -24,7 +30,10 @@ struct SecondView: View {
 }
 
 struct SecondView_Previews: PreviewProvider {
+  
+  @State static var searchedText: String = ""
+  
     static var previews: some View {
-        SecondView()
+        SecondView(searchedText: $searchedText)
     }
 }

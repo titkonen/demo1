@@ -8,12 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State var searchedText: String = ""
+  @State var showSearch: Bool = false
+  
+  
   var body: some View {
     NavigationView {
       VStack {
         Text("Step 1")
           .font(.title)
-        NavigationLink(destination: SecondView()) {
+        
+        TextField("Search here...", text: $searchedText, onCommit: {
+          // This will be called when the search is clicked.
+          self.showSearch = true
+        })
+          .padding(8)
+          .keyboardType(.webSearch)
+          .background(Color(.systemGray6))
+          .disableAutocorrection(true)
+          .cornerRadius(5)
+        
+        NavigationLink(destination: SecondView(searchedText: $searchedText)) {
           Text("Go To Second Step")
         }
       }
